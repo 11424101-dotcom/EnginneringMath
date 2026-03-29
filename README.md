@@ -14,7 +14,7 @@ Second-order-7
 ## the qustion and solve
 I can't sely myself over<br> this homework think  because
 my math grade is high school<br>
-so i have help GPT of 60% in HomeWork
+so i have help GPT use of 60% in HomeWork
 
 ## push to github
 ```
