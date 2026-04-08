@@ -1,8 +1,13 @@
 # EnginneringMath
 
+## New version
+Ord image i have cd to image files 
+modify math with markdowm 
+
 - [x] Two Home
 - [x] Read Enginnering Marh
 - [x] Note
+- [x] Markdown
 
 <br>
 last week i have writh by First-Order-11
@@ -15,11 +20,6 @@ Second-order-7
 I can't sely myself over<br> this homework think  because
 my math grade is high school<br>
 so i have help GPT use of 60% in HomeWork
-
-# version
-
-1.0 fist add the image
-2.0 modify image transfrom markdown 
 
 
 ## push to github
