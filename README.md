@@ -1,30 +1,39 @@
-# EnginneringMath
+# EnginneringMathMidterm
 
-## New version
-Ord image i have cd to image files <br>
-modify math with markdowm 
+`11424101陳閔駿`
 
-- [x] Two Home
-- [x] Read Enginnering Marh
-- [x] Note
-- [x] Markdown
+## Process
+1. Read the  topic
+2. Read all class pages
+3. think the question Laplace transform？
+4. I can't not because is difficult. than i have ask GPT
 
-<br>
-last week i have writh by First-Order-11
-<br>
-This week i have writh by
-Second-order-7
-<br>
+## Question GPT
+1. fast my token is `help me over this homework use the Laplace transform`
+2. GPT output `Second-Order Differential Equations `
+3. i thank is't `Laplace transform`
 
-## the qustion and solve
-I can't sely myself over<br> this homework think  because
-my math grade is high school<br>
-so i have help GPT use of 60% in HomeWork
+## version
+YYYY/MM/DD 
 
+- 2026/4/18 fast use cmd git push to github
+- 2026/4/19 modify latex to github
+- 2026/4/19 branch to new-report
 
-## push to github
-```
+## Code
+
+```cmd
+git checkout -b "Midterm"
 git add .
-git commit -m "message"
-git push
+git commit -m "modify"
+git push --set-upstream origin Midterm
 ```
+
+
+## Error and Debug
+
+- In Vscode can use LaTex but to Github can't
+`ex: you can as < br > but in Vscode`
+
+
+![/image.png](image.png)
