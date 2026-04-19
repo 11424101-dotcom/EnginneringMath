@@ -1,6 +1,6 @@
 # 題目五：RLC 電路
 
-## 一、問題描述
+## introdution
 考慮 RLC 電路，其電流滿足以下微分方程（KVL）：
 
 $$:contentReference[oaicite:0]{index=0}$$
@@ -15,31 +15,29 @@ $$
 
 ---
 
-## 二、解題策略（工程數學觀點）
+## 二、idea with Enginnering Math
 
-這是一個**二階線性非齊次微分方程**，標準做法：
-
-1. 對方程做 **拉普拉斯轉換**
-2. 解代數方程得到 $$\( I(s) \)$$
-3. 做 **反拉普拉斯轉換**
+：
+1. **Laplace transform**
+2. equation $$\( I(s) \)$$
+3. 做 **Post's inversion formula**
 
 
 ---
 
-## 三、拉普拉斯轉換
+## 三、Laplace transform
 
-假設初始條件為：
+first define：
 $$\[
 i(0)=0,\quad i'(0)=0
 \]$$
 
-對整個方程取拉普拉斯：
+Laplace transform for all equation：
 
 $$\[
 L[s^2 I(s)] + R[s I(s)] + \frac{1}{C} I(s) = \frac{s}{s^2+1}
 \]$$
 
-整理：
 
 $$\[
 I(s)\left( Ls^2 + Rs + \frac{1}{C} \right) = \frac{s}{s^2+1}
@@ -47,7 +45,7 @@ I(s)\left( Ls^2 + Rs + \frac{1}{C} \right) = \frac{s}{s^2+1}
 
 ---
 
-## 四、解出 $$\( I(s) \)$$
+## 四、answear $$\( I(s) \)$$
 
 $$\[
 I(s) = \frac{s}{(s^2+1)(Ls^2 + Rs + \frac{1}{C})}
@@ -55,33 +53,32 @@ I(s) = \frac{s}{(s^2+1)(Ls^2 + Rs + \frac{1}{C})}
 
 ---
 
-## 五、部分分式分解
+## 五、part of split
 
-將：
+if ：
 
 $$\[
 I(s) = \frac{s}{(s^2+1)(Ls^2 + Rs + \frac{1}{C})}
 \]$$
 
-拆成：
+than：
 
 $$\[
 I(s) = \frac{As + B}{s^2+1} + \frac{Cs + D}{Ls^2 + Rs + \frac{1}{C}}
 \]$$
 
-接下來：
+than：
 
-1. 通分
-2. 比較係數
-3. 解出 A, B, C, D
+1. total amount
+2. Comparison coefficient
+3. to  A, B, C, D
 
-（這部分是計算量，不是觀念重點）
 
 ---
 
-## 六、反拉普拉斯轉換
+## 六、Post's inversion formula
 
-### 1️⃣ 第一部分（強迫響應）
+### first（forced response）
 
 $$\[
 \frac{As + B}{s^2+1}
@@ -93,23 +90,23 @@ $$\[
 A\cos(t) + B\sin(t)
 \]$$
 
-👉 這就是**穩態解（forced response）**
+this is**orced response**
 
 ---
 
-### 2️⃣ 第二部分（自然響應）
+### two （natural response）
 
 $$\[
 \frac{Cs + D}{Ls^2 + Rs + \frac{1}{C}}
 \]$$
 
-特徵方程：
+feature ：
 
 $$\[
 Ls^2 + Rs + \frac{1}{C} = 0
 \]$$
 
-解：
+answear：
 
 $$\[
 s = \frac{-R \pm \sqrt{R^2 - 4L/C}}{2L}
@@ -117,7 +114,7 @@ s = \frac{-R \pm \sqrt{R^2 - 4L/C}}{2L}
 
 ---
 
-## 七、物理意義（重點）
+## 七、physical meaning
 
 ### 判斷是否震盪
 
