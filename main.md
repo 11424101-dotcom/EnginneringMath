@@ -116,9 +116,9 @@ s = \frac{-R \pm \sqrt{R^2 - 4L/C}}{2L}
 
 ## 七、physical meaning
 
-### 判斷是否震盪
+### Determine whether there is a shock
 
-看判別式：
+see ：
 
 $$\[
 R^2 - 4L/C
@@ -126,42 +126,41 @@ R^2 - 4L/C
 
 ---
 
-### 情況分析：
+### situation analysis：
 
-#### ① 過阻尼（Overdamped）
+#### ① Overdamped
 $$\[
 R^2 > 4L/C
 \]$$
 
-👉 不震盪，直接衰減
 
 ---
 
-#### ② 臨界阻尼（Critically damped）
+#### ② Critically damped
 $$\[
 R^2 = 4L/C
 \]$$
 
-👉 最快回到穩定，不震盪
+
 
 ---
 
-#### ③ 欠阻尼（Underdamped）⭐（會震盪）
+#### ③ Underdamped will vibrate
 $$\[
 R^2 < 4L/C
 \]$$
 
-👉 解為：
+👉 answear ：
 
 $$\[
 i(t) = e^{-\alpha t}(A\cos(\omega t) + B\sin(\omega t))
 \]$$
 
-👉 **震盪 + 指數衰減**
+👉 **Oscillation + Index Decline**
 
 ---
 
-## 八、最終解結構
+## 八、final solution structure
 
 $$\[
 i(t) = i_{transient}(t) + i_{steady}(t)
@@ -169,28 +168,27 @@ i(t) = i_{transient}(t) + i_{steady}(t)
 
 ---
 
-### 暫態解（會消失）
+### Transient solution (will disappear)
 $$\[
 i_{transient}(t) = e^{-\alpha t}(\cdots)
 \]$$
 
-👉 控制「衰減速度」
 
 ---
 
-### 穩態解（最後留下來）
+### Steady-state solution (left at the end)
 $$\[
 i_{steady}(t) = A\cos(t) + B\sin(t)
 \]$$
 
-👉 跟輸入頻率一樣（cos t）
+-> Same as the input frequency (cos t)
 
 ---
 
-## 九、工程結論（報告一定要寫）
+## 九、Engineering conclusion
 
-### 1️⃣ 是否震盪？
-取決於：
+### 1️⃣ Is it oscillating？
+
 
 $$\[
 R^2 - 4L/C
@@ -198,31 +196,15 @@ R^2 - 4L/C
 
 ---
 
-### 2️⃣ 如何衰減？
+### 2️⃣ How to attenuate
 
-由指數項決定：
 
 $$\[
 e^{-\frac{R}{2L}t}
 \]$$
 
-👉 阻尼越大（R 越大） → 衰減越快
+The greater the damping (the larger the R), the faster the decay.
 
 ---
 
-### 3️⃣ 系統本質
 
-這是一個典型：
-
-- 二階系統
-- 有阻尼振盪
-- 頻率響應系統
-
----
-
-## 十、總結（一句話版本）
-
-RLC 電路的電流是：
-👉「震盪（sin/cos） + 指數衰減（e^-t）」的組合
-
----
